@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEMITRAX — SEMantic Interoperability and TRAnsformation for Healthcare data eXchange</title>
-  <meta name="description" content="SEMITRAX: transformação semântica e sumarização automática de relatórios radiológicos PACS para FHIR R4 — Luís Alfredo Villacis Vera, IPLeiria / ESTG-Leiria">
+  <title>SITHEAX — Semantic Interoperability and Transformation for HEAlthcare dAta eXchange</title>
+  <meta name="description" content="SITHEAX: transformação semântica e sumarização automática de relatórios radiológicos PACS para FHIR R4 — Luís Alfredo Villacis Vera, IPLeiria / ESTG-Leiria">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -343,7 +343,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">SEMITRAX<span> · Clinical Intelligence</span></div>
+  <div class="nav-logo">SITHEAX<span> · Clinical Intelligence</span></div>
   <div class="nav-links">
     <a href="#historia">A História</a>
     <a href="#arquitetura">Arquitetura</a>
@@ -351,7 +351,7 @@
     <a href="#projetos">Projetos EI</a>
     <a href="#demo">Demo</a>
     <a href="#equipa">Equipa</a>
-    <a href="https://github.com/fr2202" target="_blank">GitHub ↗</a>
+    <a href="https://github.com/fr2202/SITHEAX" target="_blank">GitHub ↗</a>
   </div>
 </nav>
 
@@ -361,16 +361,16 @@
   <div class="hero-content">
     <div class="hero-badge">HL7 FHIR R4 · Clinical NLP · IPLeiria / ESTG-Leiria</div>
     <h1>
-      <span class="grad">SEMITRAX</span><br>
+      <span class="grad">SITHEAX</span><br>
       Semantic Interoperability<br>&amp; Clinical Intelligence
     </h1>
     <p class="hero-sub">
-      <strong style="color:var(--teal);">SEM</strong>antic Interoperability and <strong style="color:var(--teal);">TRA</strong>nsformation for Healthcare data e<strong style="color:var(--teal);">X</strong>change —
+      <strong style="color:var(--teal);">S</strong>emantic <strong style="color:var(--teal);">I</strong>nteroperability and <strong style="color:var(--teal);">T</strong>ransformation for <strong style="color:var(--teal);">HEA</strong>lthcare d<strong style="color:var(--teal);">A</strong>ta e<strong style="color:var(--teal);">X</strong>change —
       transformação semântica e sumarização automática de relatórios radiológicos do PACS hospitalar ao padrão FHIR R4, com avaliação multilíngue por modelos de linguagem.
     </p>
     <div class="hero-actions">
       <a href="#arquitetura" class="btn btn-primary">Ver Arquitetura →</a>
-      <a href="https://github.com/fr2202" class="btn btn-outline" target="_blank">⭐ GitHub</a>
+      <a href="https://github.com/fr2202/SITHEAX" class="btn btn-outline" target="_blank">⭐ GitHub</a>
       <a href="https://www.sciencedirect.com/science/article/pii/S1877050926007131" class="btn btn-outline" target="_blank">📄 Artigo Publicado</a>
     </div>
   </div>
@@ -391,7 +391,7 @@
     <div class="stat-label">Publicações académicas</div>
   </div>
   <div class="stat-item">
-    <div class="stat-num" data-target="2">0</div>
+    <div class="stat-num" data-target="3">0</div>
     <div class="stat-label">Projetos de Eng. Informática</div>
   </div>
 </div>
@@ -611,17 +611,24 @@
     <div class="section-tag">Co-orientação</div>
     <h2>Projetos de Engenharia Informática</h2>
     <p class="section-intro">
-      O trabalho de investigação foi integrado em dois projetos de licenciatura co-orientados,
+      O trabalho de investigação foi integrado em três projetos de licenciatura co-orientados,
       permitindo validar o sistema em contexto real de desenvolvimento de software.
     </p>
     <div class="projects-grid fade-up">
+
+      <!-- EI 2024/2025 -->
       <div class="proj-card">
         <div class="proj-year">Projeto EI · 2024 / 2025</div>
         <div class="proj-title">Plataforma Web de Conversão PACS → FHIR</div>
         <div class="proj-desc">
           Integração do pipeline de transformação FHIR numa aplicação web completa. Backend Flask com
           endpoints RESTful para conversão on-demand; frontend para visualização dos bundles FHIR gerados.
-          Persistência em MongoDB. Os alunos integraram diretamente a API desenvolvida no projeto de investigação.
+          Persistência em MongoDB. Os alunos integraram diretamente a API desenvolvida no projeto de investigação,
+          resultando co-autoria no artigo publicado no Procedia Computer Science.
+        </div>
+        <div style="margin:.75rem 0; font-size:.78rem; color:var(--muted);">
+          <strong style="color:var(--text);">Alunos:</strong>
+          Joaquim Pereira &nbsp;·&nbsp; Pedro Silva
         </div>
         <div class="proj-tags">
           <span class="tag">Python / Flask</span>
@@ -631,48 +638,79 @@
           <span class="tag">HTML/JS Frontend</span>
         </div>
       </div>
+
+      <!-- EI 2025/2026 — Projeto 51 -->
       <div class="proj-card">
-        <div class="proj-year">Projeto EI · 2025 / 2026</div>
-        <div class="proj-title">Servidor HAPI-FHIR + Dashboard Médico com Resumo Clínico</div>
+        <div class="proj-year">Projeto EI · 2025 / 2026 — Proj. 51</div>
+        <div class="proj-title">Dashboard Médico Web com Resumo Clínico Automático (FHIR)</div>
         <div class="proj-desc">
-          Dois projetos complementares: <strong>Projeto 51</strong> — servidor HAPI-FHIR R4 configurado
-          e populado com os bundles gerados; <strong>Projeto 52</strong> — dashboard web médico com
-          integração do módulo de sumarização clínica, com máquina virtual Ubuntu para deploy.
-          GitHub público com todo o código e documentação.
+          Desenvolvimento do dashboard web médico como camada de apresentação do ecossistema clínico
+          baseado em HL7 FHIR R4. Interface para consulta de pacientes, visualização de sumários clínicos,
+          diagnósticos e documentos. Integração com o backend FHIR (Projeto 52). Boas práticas de
+          usabilidade (ISO 9241, WCAG) e gestão de risco (ISO 14971 / IEC 62366).
+        </div>
+        <div style="margin:.75rem 0; font-size:.78rem; color:var(--muted);">
+          <strong style="color:var(--text);">Alunos:</strong>
+          Bernardo Meireles Cameira Pereira Frija &nbsp;·&nbsp; Rodrigo Caldeira Carriça
+        </div>
+        <div class="proj-tags">
+          <span class="tag">HTML / CSS / JS</span>
+          <span class="tag">FHIR R4</span>
+          <span class="tag">LLM Summarization</span>
+          <span class="tag">WCAG / ISO 9241</span>
+        </div>
+      </div>
+
+      <!-- EI 2025/2026 — Projeto 52 -->
+      <div class="proj-card">
+        <div class="proj-year">Projeto EI · 2025 / 2026 — Proj. 52</div>
+        <div class="proj-title">Repositório FHIR com Pipeline de Ingestão e Otimização de Performance</div>
+        <div class="proj-desc">
+          Implementação do repositório de dados clínicos baseado no servidor HAPI-FHIR R4 (Docker +
+          PostgreSQL). Pipeline de ingestão em Python que automatiza a conversão dos relatórios hospitalares
+          em recursos FHIR, com operações idempotentes (PUT). Otimização profunda da base de dados com
+          tempos de resposta &lt;500ms para pesquisas complexas. Disponibiliza os dados ao dashboard (Proj. 51).
+        </div>
+        <div style="margin:.75rem 0; font-size:.78rem; color:var(--muted);">
+          <strong style="color:var(--text);">Alunos:</strong>
+          Rúben Moreira Ribeiro &nbsp;·&nbsp; David Belykh
         </div>
         <div class="proj-tags">
           <span class="tag">HAPI-FHIR</span>
-          <span class="tag">Dashboard Web</span>
-          <span class="tag">LLM Summarization</span>
-          <span class="tag">Ubuntu VM</span>
-          <span class="tag">.NET / Java</span>
+          <span class="tag">Docker + PostgreSQL</span>
+          <span class="tag">Python Pipeline</span>
+          <span class="tag">MoSCoW</span>
         </div>
       </div>
+
     </div>
+
     <!-- Links dos repos -->
-    <div style="margin-top:1.5rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:.75rem;">
+    <div style="margin-top:1.5rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:.75rem;">
       <div style="padding:1rem 1.25rem; background:var(--card); border:1px solid var(--border); border-radius:10px; font-size:.85rem;">
         <div style="font-size:.7rem; color:var(--teal); font-weight:700; letter-spacing:1px; margin-bottom:.3rem;">PROJETO EI 2024/2025</div>
         <a href="https://github.com/rsmal-ipl/Dashboard-Medico-Web-com-Integracao-de-Sistema-de-Resumo-Clinico" target="_blank"
            style="color:var(--text); text-decoration:none; font-weight:600;">Dashboard-Medico-Web ↗</a>
-        <div style="font-size:.75rem; color:var(--muted); margin-top:.2rem;">rsmal-ipl · Flask + MongoDB + FHIR</div>
+        <div style="font-size:.72rem; color:var(--muted); margin-top:.2rem;">rsmal-ipl · Flask + MongoDB + FHIR</div>
+        <div style="font-size:.7rem; color:var(--muted); margin-top:.15rem;">Joaquim Pereira · Pedro Silva</div>
       </div>
       <div style="padding:1rem 1.25rem; background:var(--card); border:1px solid var(--border); border-radius:10px; font-size:.85rem;">
-        <div style="font-size:.7rem; color:var(--teal); font-weight:700; letter-spacing:1px; margin-bottom:.3rem;">PROJETO EI 2025/2026 — SUMARIZAÇÃO</div>
-        <a href="https://github.com/fr2202/proyecto51" target="_blank"
-           style="color:var(--text); text-decoration:none; font-weight:600;">fr2202/proyecto51 ↗</a>
-        <div style="font-size:.75rem; color:var(--muted); margin-top:.2rem;">Sumarização clínica integrada</div>
+        <div style="font-size:.7rem; color:var(--teal); font-weight:700; letter-spacing:1px; margin-bottom:.3rem;">PROJETO EI 2025/2026 — PROJ. 51 (DASHBOARD)</div>
+        <span style="color:var(--muted); font-weight:600;">Dashboard Médico Web (FHIR)</span>
+        <div style="font-size:.72rem; color:var(--muted); margin-top:.2rem;">HTML/JS · FHIR R4 · WCAG</div>
+        <div style="font-size:.7rem; color:var(--muted); margin-top:.15rem;">Bernardo Frija · Rodrigo Carriça</div>
       </div>
       <div style="padding:1rem 1.25rem; background:var(--card); border:1px solid var(--border); border-radius:10px; font-size:.85rem;">
+        <div style="font-size:.7rem; color:var(--teal); font-weight:700; letter-spacing:1px; margin-bottom:.3rem;">PROJETO EI 2025/2026 — PROJ. 52 (FHIR SERVER)</div>
+        <span style="color:var(--muted); font-weight:600;">Repositório HAPI-FHIR + Pipeline</span>
+        <div style="font-size:.72rem; color:var(--muted); margin-top:.2rem;">Docker · PostgreSQL · Python</div>
+        <div style="font-size:.7rem; color:var(--muted); margin-top:.15rem;">Rúben Ribeiro · David Belykh</div>
+      </div>
+      <div style="padding:1rem 1.25rem; background:var(--card); border:1px solid rgba(79,142,247,0.3); border-radius:10px; font-size:.85rem;">
         <div style="font-size:.7rem; color:var(--blue); font-weight:700; letter-spacing:1px; margin-bottom:.3rem;">API FHIR (v1)</div>
         <a href="https://github.com/fr2202/APIFHIR" target="_blank"
            style="color:var(--text); text-decoration:none; font-weight:600;">fr2202/APIFHIR ↗</a>
-        <div style="font-size:.75rem; color:var(--muted); margin-top:.2rem;">Flask · Dockerfile · pipeline.py</div>
-      </div>
-      <div style="padding:1rem 1.25rem; background:var(--card); border:1px solid var(--border); border-radius:10px; font-size:.85rem;">
-        <div style="font-size:.7rem; color:var(--purple); font-weight:700; letter-spacing:1px; margin-bottom:.3rem;">PROJETO EI 2025/2026 — 52</div>
-        <span style="color:var(--muted); font-weight:600;">Dashboard médico + VM Ubuntu</span>
-        <div style="font-size:.75rem; color:var(--muted); margin-top:.2rem;">Em publicação</div>
+        <div style="font-size:.72rem; color:var(--muted); margin-top:.2rem;">Flask · Dockerfile · pipeline.py</div>
       </div>
     </div>
   </div>
@@ -905,13 +943,13 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">SEMITRAX</div>
-  <div class="footer-sub">SEMantic Interoperability and TRAnsformation for Healthcare data eXchange · Luís Alfredo Villacis Vera<br>
+  <div class="footer-logo">SITHEAX</div>
+  <div class="footer-sub">Semantic Interoperability and Transformation for HEAlthcare dAta eXchange · Luís Alfredo Villacis Vera<br>
     Mestrado em Engenharia Informática · ESTG · Instituto Politécnico de Leiria<br>
     BLOCKCHAIN.PT WP2 · PRR / Next Generation EU · Ref. 02/C05-i01.01/2022.PC644918095-00000033
   </div>
   <div class="footer-links">
-    <a href="https://github.com/fr2202" target="_blank">GitHub · fr2202</a>
+    <a href="https://github.com/fr2202/SITHEAX" target="_blank">GitHub · SITHEAX</a>
     <a href="https://github.com/fr2202/fhir-transformer" target="_blank">fhir-transformer</a>
     <a href="https://github.com/fr2202/clinical-summarization" target="_blank">clinical-summarization</a>
     <a href="https://github.com/fr2202/APIFHIR" target="_blank">APIFHIR</a>
@@ -919,7 +957,7 @@
     <a href="https://www.ipleiria.pt" target="_blank">IPLeiria</a>
     <a href="mailto:luisalfre2202@gmail.com">Contacto</a>
   </div>
-  <div class="footer-copy">© 2026 Luís A. Villacis Vera · Prof. R. Malheiro · Prof. O. Craveiro — BLOCKCHAIN.PT · ESTG-IPLeiria</div>
+  <div class="footer-copy">© 2026 Luís A. Villacis Vera · Prof. R. Malheiro · Prof. O. Craveiro — SITHEAX · BLOCKCHAIN.PT · ESTG-IPLeiria</div>
 </footer>
 
 <script>

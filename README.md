@@ -1,14 +1,14 @@
-# SEMITRAX — SEMantic Interoperability and TRAnsformation for Healthcare data eXchange
+# SITHEAX — Semantic Interoperability and Transformation for HEAlthcare dAta eXchange
 
 > Transformação semântica e sumarização automática de relatórios radiológicos PACS para FHIR R4, com avaliação multilíngue por modelos de linguagem de grande escala.
 
-**🌐 [Ver página do projeto](https://fr2202.github.io/semitrax)** · **📄 [Artigo publicado (ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S1877050926007131)**
+**🌐 [Ver página do projeto](https://fr2202.github.io/SITHEAX)** · **📄 [Artigo publicado (ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S1877050926007131)**
 
 ---
 
 ## Sobre o projeto
 
-**SEMITRAX** é uma plataforma de investigação focada em **interoperabilidade semântica clínica** e **processamento de linguagem natural aplicado à radiologia**. O trabalho parte de um conjunto real de 10.001 relatórios de Tomografia Computadorizada anonimizados provenientes do CHULN (Centro Hospitalar Universitário de Lisboa Norte), abordando dois problemas concretos:
+**SITHEAX** é uma plataforma de investigação focada em **interoperabilidade semântica clínica** e **processamento de linguagem natural aplicado à radiologia**. O trabalho parte de um conjunto real de 10.001 relatórios de Tomografia Computadorizada anonimizados provenientes do CHULN (Centro Hospitalar Universitário de Lisboa Norte), abordando dois problemas concretos:
 
 1. Como transformar dados clínicos não estruturados — exportados em JSON aninhado com narrativas em RTF — no padrão universal **HL7 FHIR R4**, de forma automática, validada e escalável?
 2. Como gerar resumos clínicos automáticos de qualidade a partir desses relatórios, com avaliação rigorosa em português e inglês?
@@ -24,15 +24,15 @@ Embora o trabalho tenha sido desenvolvido no contexto da bolsa BLOCKCHAIN.PT (WP
 
 ## Repositórios
 
-| Projeto | Descrição | Repo |
-|---------|-----------|------|
-| **Página do projeto** | GitHub Pages — documentação, resultados, demos | [`fr2202/semitrax`](https://github.com/fr2202/semitrax) |
-| **Pipeline FHIR** | Transformação PACS→FHIR R4 multi-agente em Python | [`fr2202/fhir-transformer`](https://github.com/fr2202/fhir-transformer) |
-| **API FHIR** | API Flask original de conversão PACS→FHIR (v1) | [`fr2202/APIFHIR`](https://github.com/fr2202/APIFHIR) |
-| **Sumarização** | Sumarização clínica com LLMs — PTT5, mT5, Gemma, avaliação multilíngue | [`fr2202/clinical-summarization`](https://github.com/fr2202/clinical-summarization) |
-| **Projeto EI 2024/2025** | Dashboard web com integração FHIR e resumo clínico (Flask + MongoDB) | [`rsmal-ipl/Dashboard-Medico-Web-com-Integracao-de-Sistema-de-Resumo-Clinico`](https://github.com/rsmal-ipl/Dashboard-Medico-Web-com-Integracao-de-Sistema-de-Resumo-Clinico) |
-| **Projeto EI 2025/2026 — 52** | Servidor HAPI-FHIR + pipeline de ingestão (Docker + PostgreSQL) | *(em publicação)* |
-| **Projeto EI 2025/2026 — 51** | Dashboard médico web com resumo clínico integrado | *(em publicação)* |
+| Projeto | Descrição | Alunos | Repo |
+|---------|-----------|--------|------|
+| **Repositório principal (SITHEAX)** | GitHub Pages — documentação, resultados, demos | — | [`fr2202/SITHEAX`](https://github.com/fr2202/SITHEAX) |
+| **Pipeline FHIR** | Transformação PACS→FHIR R4 multi-agente em Python | — | [`fr2202/fhir-transformer`](https://github.com/fr2202/fhir-transformer) |
+| **API FHIR** | API Flask original de conversão PACS→FHIR (v1) | — | [`fr2202/APIFHIR`](https://github.com/fr2202/APIFHIR) |
+| **Sumarização** | Sumarização clínica com LLMs — PTT5, mT5, Gemma, avaliação multilíngue | — | [`fr2202/clinical-summarization`](https://github.com/fr2202/clinical-summarization) |
+| **Projeto EI 2024/2025** | Dashboard web com integração FHIR e resumo clínico (Flask + MongoDB) | Joaquim Pereira · Pedro Silva | [`rsmal-ipl/Dashboard-Medico-Web-com-Integracao-de-Sistema-de-Resumo-Clinico`](https://github.com/rsmal-ipl/Dashboard-Medico-Web-com-Integracao-de-Sistema-de-Resumo-Clinico) |
+| **Projeto EI 2025/2026 — 51** | Dashboard médico web com resumo clínico integrado baseado em FHIR R4 | Bernardo Frija · Rodrigo Carriça | *(em publicação)* |
+| **Projeto EI 2025/2026 — 52** | Repositório HAPI-FHIR + pipeline de ingestão (Docker + PostgreSQL) | Rúben Ribeiro · David Belykh | *(em publicação)* |
 
 ---
 
@@ -161,6 +161,17 @@ python evaluate_all.py
 | **Luís Alfredo Villacis Vera** | Investigador / Mestrando | ESTG · IPLeiria |
 | **Prof. Ricardo Manuel da Silva Malheiro** | Orientador Científico | ESTG · IPLeiria |
 | **Prof. Olga Marina Freitas Craveiro** | Orientadora Científica | ESTG · IPLeiria |
+
+### Alunos de Engenharia Informática (co-orientados)
+
+| Nome | Projeto | Ano |
+|------|---------|-----|
+| **Joaquim Pereira** | EI 2024/2025 — Dashboard Web PACS→FHIR (Flask + MongoDB) | 2024/2025 |
+| **Pedro Silva** | EI 2024/2025 — Dashboard Web PACS→FHIR (Flask + MongoDB) | 2024/2025 |
+| **Bernardo Meireles Cameira Pereira Frija** | EI 2025/2026 — Proj. 51: Dashboard Médico Web com Resumo Clínico (FHIR) | 2025/2026 |
+| **Rodrigo Caldeira Carriça** | EI 2025/2026 — Proj. 51: Dashboard Médico Web com Resumo Clínico (FHIR) | 2025/2026 |
+| **Rúben Moreira Ribeiro** | EI 2025/2026 — Proj. 52: Repositório HAPI-FHIR + Pipeline de Ingestão | 2025/2026 |
+| **David Belykh** | EI 2025/2026 — Proj. 52: Repositório HAPI-FHIR + Pipeline de Ingestão | 2025/2026 |
 
 ---
 
