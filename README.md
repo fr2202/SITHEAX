@@ -2,7 +2,7 @@
 
 > Transformação semântica e sumarização automática de relatórios radiológicos PACS para FHIR R4, com avaliação multilíngue por modelos de linguagem de grande escala.
 
-**🌐 [Ver página do projeto](https://fr2202.github.io/SITHEAX)** · **📄 [Artigo publicado (ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S1877050926007131)**
+**🌐 [Ver página do projeto](https://rsmal-ulo.github.io/SITHEAX)** · **📄 [Artigo publicado (ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S1877050926007131)**
 
 ---
 
@@ -26,10 +26,10 @@ Embora o trabalho tenha sido desenvolvido no contexto da bolsa BLOCKCHAIN.PT (WP
 
 | Projeto | Descrição | Alunos | Repo |
 |---------|-----------|--------|------|
-| **Repositório principal (SITHEAX)** | GitHub Pages — documentação, resultados, demos | — | [`fr2202/SITHEAX`](https://github.com/fr2202/SITHEAX) |
-| **Pipeline FHIR** | Transformação PACS→FHIR R4 multi-agente em Python | — | [`fr2202/fhir-transformer`](https://github.com/fr2202/fhir-transformer) |
-| **API FHIR** | API Flask original de conversão PACS→FHIR (v1) | — | [`fr2202/APIFHIR`](https://github.com/fr2202/APIFHIR) |
-| **Sumarização** | Sumarização clínica com LLMs — PTT5, mT5, Gemma, avaliação multilíngue | — | [`fr2202/clinical-summarization`](https://github.com/fr2202/clinical-summarization) |
+| **Repositório principal (SITHEAX)** | GitHub Pages — documentação, resultados, demos | — | [`rsmal-ulo/SITHEAX`](https://github.com/rsmal-ulo/SITHEAX) |
+| **Pipeline FHIR** | Transformação PACS→FHIR R4 multi-agente em Python | — | [`rsmal-ulo/fhir-transformer`](https://github.com/rsmal-ulo/fhir-transformer) |
+| **API FHIR** | API Flask original de conversão PACS→FHIR (v1) | — | [`rsmal-ulo/APIFHIR`](https://github.com/rsmal-ulo/APIFHIR) |
+| **Sumarização** | Sumarização clínica com LLMs — PTT5, mT5, Gemma, avaliação multilíngue | — | [`rsmal-ulo/clinical-summarization`](https://github.com/rsmal-ulo/clinical-summarization) |
 | **Projeto EI 2024/2025** | Dashboard web com integração FHIR e resumo clínico (Flask + MongoDB) | Joaquim Pereira · Pedro Silva | [`rsmal-ipl/Dashboard-Medico-Web-com-Integracao-de-Sistema-de-Resumo-Clinico`](https://github.com/rsmal-ipl/Dashboard-Medico-Web-com-Integracao-de-Sistema-de-Resumo-Clinico) |
 | **Projeto EI 2025/2026 — 51** | Dashboard médico web com resumo clínico integrado baseado em FHIR R4 | Bernardo Frija · Rodrigo Carriça | *(em publicação)* |
 | **Projeto EI 2025/2026 — 52** | Repositório HAPI-FHIR + pipeline de ingestão (Docker + PostgreSQL) | Rúben Ribeiro · David Belykh | *(em publicação)* |
